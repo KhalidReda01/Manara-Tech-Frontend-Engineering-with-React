@@ -53,7 +53,7 @@ fetch(" https://pokeapi.co/api/v2/pokemon/ditto")
   .catch((err) => console.log(err));
 //fetch Pokemon with async / await without error handling
 const fetchPokemon = async (id) => {
-  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id})`);
+  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
   const data = await res.json();
   console.log(data);
 };
